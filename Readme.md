@@ -9,19 +9,17 @@ npm (Node package manager)
 Installation
 Clone the repository:
 
-bash
-Copy code
+<br/>
 git clone https://github.com/get4prince/web-crawling
 cd web-crawling
 Install dependencies:
 
-bash
-Copy code
+<br/>
 npm install
 Usage
 
 Run the following command to generate the product_url.json file:
 
-bash
-Copy code
+<br/>
+
 After running the script, you should find a product_url.json file in your project root directory, containing the generated URLs.
