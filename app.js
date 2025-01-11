@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
 const port = 3000;
+const { main } = require("./index.js")
+main()
 
 const statusMonitor = require('express-status-monitor')();
 

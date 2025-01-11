@@ -276,11 +276,7 @@ async function main() {
 
 
     const crawler = new EcommerceCrawler(config);
-    const domains = [
-        'https://www.flipkart.com/',
-        'https://www.amazon.in/',
-        'https://www.meesho.com/'
-    ];
+    const domains = require("./domain.json")
 
     try {
         const results = await crawler.crawlSites(domains);
