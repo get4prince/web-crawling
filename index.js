@@ -257,7 +257,7 @@ async function main() {
     });
 
     setInterval(async () => {
-        console.log("inteval running")
+        console.log("interval running")
         const formatMemoryUsage = (data) => `${Math.round(data / 1024 / 1024 * 100) / 100} MB`;
 
         const memoryData = process.memoryUsage();
@@ -268,7 +268,7 @@ async function main() {
             heapUsed: `${formatMemoryUsage(memoryData.heapUsed)} -> actual memory used during the execution`,
             external: `${formatMemoryUsage(memoryData.external)} -> V8 external memory`,
         };
-        // console.log(memoryUsage);
+        console.log(memoryUsage);
 
 
         await crawler.saveResults();
@@ -278,7 +278,8 @@ async function main() {
     const crawler = new EcommerceCrawler(config);
     const domains = [
         'https://www.flipkart.com/',
-        'https://www.amazon.in/'
+        'https://www.amazon.in/',
+        'https://www.meesho.com/'
     ];
 
     try {
